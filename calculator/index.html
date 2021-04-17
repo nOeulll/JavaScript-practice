@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div>
+    <input type="text" id="display" width="100%"/>
+    <input type="text" id="result" width="100%"/>
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td onclick="addOutput('+')">
+            <button type="button" class="opr">+</button>
+          </td>
+          <td onclick="addOutput('-')">
+            <button type="button" class="opr">-</button>
+          </td>
+          <td onclick="addOutput('*')">
+            <button type="button" class="opr">*</button>
+          </td>
+          <td onclick="addOutput('/')">
+            <button type="button" class="opr">/</button>
+          </td>
+        </tr>
+        <tr>
+          <td onclick="addOutput(7)">
+            <button type="button" class="num">7</button>
+          </td>
+          <td onclick="addOutput(8)">
+            <button type="button" class="num">8</button>
+          </td>
+          <td onclick="addOutput(9)">
+            <button type="button" class="num">9</button>
+          </td>
+          <td onclick="reset()">
+            <button type="button" class="clear">C</button>
+          </td>
+        </tr>
+        <tr>
+          <td onclick="addOutput(4)">
+            <button type="button" class="num">4</button>
+          </td>
+          <td onclick="addOutput(5)">
+            <button type="button" class="num">5</button>
+          </td>
+          <td onclick="addOutput(6)">
+            <button type="button" class="num">6</button>
+          </td>
+          <td onclick="equal()" rowspan="3">
+            <button type="button" class="opr" style="height: 76px;">=</button>
+          </td>
+        </tr>
+        <tr>
+          <td onclick="addOutput(1)">
+            <button type="button" class="num">1</button>
+          </td>
+          <td onclick="addOutput(2)">
+            <button type="button" class="num">2</button>
+          </td>
+          <td onclick="addOutput(3)">
+            <button type="button" class="num">3</button>
+          </td>
+        </tr>
+        <tr>
+          <td onclick="addOutput(0)" colspan="2">
+            <button type="button" class="num" style="width: 100%;">0</button>
+          </td>
+          <td onclick="addOutput('.')">
+            <button type="button" class="dec">.</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
